@@ -1,11 +1,10 @@
-require "./test/test_helper"
-require 'date'
-require './lib/encryption'
+require './module/shiftable'
 
-class EncryptionTest < Minitest::Test
+class Encryption
+  include Shiftable
 
-  def test_it_returns_encrypted_message
-    encryption = Encryption.new
-    assert_equal "keder ohulw", encryption.encrypt("hello world", "02715", "040895")
+  def encrypt(message, key, date)
+    alphabet = ("a".."z").to_a << " "
+    shift = create_shift(key, date)
   end
 end

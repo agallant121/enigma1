@@ -9,7 +9,7 @@ class Shiftable
   c = keys[2] + dates[2]
   d = keys[3] + dates[3]
 
-  [a, b, c, d]  
+  [a, b, c, d]
   end
 
   def key_shift(key)
@@ -30,5 +30,4 @@ class Shiftable
 
     [a, b, c, d]
   end
-
 end

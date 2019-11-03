@@ -9,3 +9,4 @@ class ShiftableTest < Minitest::Test
     key = "12345"
     assert_equal [14, 24, 40, 46], create_shift(key, date)
   end
+end
