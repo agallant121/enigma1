@@ -1,8 +1,15 @@
 class Shiftable
+
   def create_shift(key, date)
   keys = key_shift(key)
   dates = date_shift(date)
 
+  a = keys[0] + dates[0]
+  b = keys[1] + dates[1]
+  c = keys[2] + dates[2]
+  d = keys[3] + dates[3]
+
+  [a, b, c, d]  
   end
 
   def key_shift(key)
